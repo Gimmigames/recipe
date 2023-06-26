@@ -1,0 +1,23 @@
+.icon-container {
+  display: flex;
+  justify-content: center;
+}
+
+.left-icon, .right-icon {
+  flex: 1;
+}
+
+.center-icon {
+  flex: 2;
+}
+
+@media (max-width: 768px) {
+  .icon-container {
+    flex-wrap: wrap;
+  }
+
+  .left-icon, .center-icon, .right-icon {
+    flex-basis: 33.33%;
+    max-width: 33.33%;
+  }
+}
